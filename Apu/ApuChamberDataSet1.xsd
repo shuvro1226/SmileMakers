@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ApuChamberDataSet1" targetNamespace="http://tempuri.org/ApuChamberDataSet1.xsd" xmlns:mstns="http://tempuri.org/ApuChamberDataSet1.xsd" xmlns="http://tempuri.org/ApuChamberDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ApuChamberConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ApuChamberConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ApuApp.Properties.Settings.GlobalReference.Default.ApuChamberConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="prescriptionTableAdapter" GeneratorDataComponentClassName="prescriptionTableAdapter" Name="prescription" UserDataComponentName="prescriptionTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ApuChamberConnectionString (Settings)" DbObjectName="ApuChamber.dbo.prescription" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT oral, diagnosis, investigation, history, treatment, medicine FROM dbo.prescription</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="oral" DataSetColumn="oral" />
+              <Mapping SourceColumn="diagnosis" DataSetColumn="diagnosis" />
+              <Mapping SourceColumn="investigation" DataSetColumn="investigation" />
+              <Mapping SourceColumn="history" DataSetColumn="history" />
+              <Mapping SourceColumn="treatment" DataSetColumn="treatment" />
+              <Mapping SourceColumn="medicine" DataSetColumn="medicine" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ApuChamberDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="ApuChamberDataSet1" msprop:Generator_UserDSName="ApuChamberDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="prescription" msprop:Generator_TableClassName="prescriptionDataTable" msprop:Generator_TableVarName="tableprescription" msprop:Generator_TablePropName="prescription" msprop:Generator_RowDeletingName="prescriptionRowDeleting" msprop:Generator_RowChangingName="prescriptionRowChanging" msprop:Generator_RowEvHandlerName="prescriptionRowChangeEventHandler" msprop:Generator_RowDeletedName="prescriptionRowDeleted" msprop:Generator_UserTableName="prescription" msprop:Generator_RowChangedName="prescriptionRowChanged" msprop:Generator_RowEvArgName="prescriptionRowChangeEvent" msprop:Generator_RowClassName="prescriptionRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="oral" msprop:Generator_ColumnVarNameInTable="columnoral" msprop:Generator_ColumnPropNameInRow="oral" msprop:Generator_ColumnPropNameInTable="oralColumn" msprop:Generator_UserColumnName="oral" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="diagnosis" msprop:Generator_ColumnVarNameInTable="columndiagnosis" msprop:Generator_ColumnPropNameInRow="diagnosis" msprop:Generator_ColumnPropNameInTable="diagnosisColumn" msprop:Generator_UserColumnName="diagnosis" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="investigation" msprop:Generator_ColumnVarNameInTable="columninvestigation" msprop:Generator_ColumnPropNameInRow="investigation" msprop:Generator_ColumnPropNameInTable="investigationColumn" msprop:Generator_UserColumnName="investigation" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="history" msprop:Generator_ColumnVarNameInTable="columnhistory" msprop:Generator_ColumnPropNameInRow="history" msprop:Generator_ColumnPropNameInTable="historyColumn" msprop:Generator_UserColumnName="history" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="treatment" msprop:Generator_ColumnVarNameInTable="columntreatment" msprop:Generator_ColumnPropNameInRow="treatment" msprop:Generator_ColumnPropNameInTable="treatmentColumn" msprop:Generator_UserColumnName="treatment" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="medicine" msprop:Generator_ColumnVarNameInTable="columnmedicine" msprop:Generator_ColumnPropNameInRow="medicine" msprop:Generator_ColumnPropNameInTable="medicineColumn" msprop:Generator_UserColumnName="medicine" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
